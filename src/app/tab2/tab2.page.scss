@@ -1,0 +1,33 @@
+ion-list-header {
+  --background: #19422d;
+  --color: #fff;
+  font-family: cursive;
+  display: block;
+  text-align: center;
+
+  --border-width: 0 0 4px 0;
+  --border-color: #f24aec;
+  --border-style: double;
+  // position: relative;
+  // position: fixed;
+}
+
+ion-title{
+  text-align: center;
+  font-family: cursive;
+}
+
+ion-button{
+  --background: #19422d;
+  display: block;
+  font-family: cursive;
+  width: 75%;
+  margin: 45px;
+  --border-width: 0 0 4px 0;
+  --border-color: #f24aec;
+  --border-style: double;
+}
+.maj_button{
+  display: flex;
+  justify-content: space-around;
+}

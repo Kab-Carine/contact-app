@@ -1,0 +1,27 @@
+ion-list-header {
+  --background: #19422d;
+  --color: #fff;
+  font-family: cursive;
+  display: block;
+  text-align: center;
+
+  --border-width: 0 0 4px 0;
+  --border-color: #f24aec;
+  --border-style: double;
+}
+ion-title {
+  font-family: cursive;
+  text-align: center;
+  font-size: 25px;
+}
+
+ion-button{
+  --background: #19422d;
+  display: block;
+  font-family: cursive;
+  width: 75%;
+  margin: 45px;
+  --border-width: 0 0 4px 0;
+  --border-color: #f24aec;
+  --border-style: double;
+}

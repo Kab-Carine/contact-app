@@ -1,0 +1,26 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title> Liste des Contacts </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Tab 1</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-list-header><ion-label>Contacts</ion-label></ion-list-header>
+  <ion-card
+    [routerLink]= "['/tabs/tab2', contact.id]"
+    button
+    *ngFor=" let contact of contacts"
+  >
+    <ion-card-header>
+      <ion-card-title
+        >{{contact.lastName}} {{contact.firstName}}
+      </ion-card-title>
+    </ion-card-header>
+  </ion-card>
+  <ion-button href="/tabs/tab3">Nouvau contact</ion-button>
+</ion-content>

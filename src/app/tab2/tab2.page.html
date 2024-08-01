@@ -1,0 +1,23 @@
+<ion-toolbar>
+  <ion-buttons slot="start">
+    <ion-back-button defaultHref="/tabs/tab1"></ion-back-button>
+  </ion-buttons>
+  <ion-title>Détails Contact</ion-title>
+</ion-toolbar>
+
+<ion-list-header><ion-label>Contacts</ion-label></ion-list-header>
+<ion-content *ngIf="contact">
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>{{ contact.firstName }} {{ contact.lastName }}</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <p>Email: {{ contact.email }}</p>
+      <p>Phone: {{ contact.phone }}</p>
+    </ion-card-content>
+  </ion-card>
+  <div class="maj_button">
+    <ion-button >Modifier</ion-button>
+    <ion-button >Supprimer</ion-button>
+  </div>
+</ion-content>
